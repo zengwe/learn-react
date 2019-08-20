@@ -4,5 +4,11 @@
 		"path": "start",
 		"isActive": false,
 		"index": "index"
+	},
+	{
+		"name": "demo1_component",
+		"path": "demo1_component",
+		"isActive": true,
+		"index": "index"
 	}
 ]

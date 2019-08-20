@@ -66,13 +66,14 @@ const resolveModule = (resolveFn, filePath) => {
 };
 
 // config after eject: we're in ./config/
-let activeProject = require('./projects')(process.env['npm_config_env']);
+let activeProject = require('./projects.js')(process.env['npm_config_env']);
 // console.log(process.env);
 // for(let key in process.env) {
 //   if(process.env[key] == 'zw') {
 //     console.log(key)
 //   }
 // }
+console.assert(activeProject!=undefined,activeProject)
 module.exports = {
   dotenv: resolveApp('.env'),
   appPath: resolveApp('.'),

@@ -1,0 +1,4 @@
+
+.<%= afterParseName %>{
+  color: red;
+}

@@ -1,7 +1,7 @@
 # react学习
 ## 启动项目
 ### 项目设置的目录
-文件./config/projects.js增加数组即可
+文件./config/projects.json增加数组即可
 
 |参数|含义|
 -:|:-
@@ -13,5 +13,13 @@
 ### 启动方式
 - npm run start --env=start 启动项目名称为start的项目
 - npm run start 启动项目中第一个isActive的项目
-### 创建项目
+### 创建/移除项目
 
+- npm run create -- --project-name=myproject
+- npm run create -- --project-name=myproject --is-active=true
+- npm run create -- --project-name=myproject --remove=true
+
+### 创建组件
+在需要创建组件的目录下
+- npm run component component-name
+> component-name为组件命1
