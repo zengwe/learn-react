@@ -3,7 +3,7 @@
 ### 项目设置的目录
 文件./config/projects.js增加数组即可
 |参数|含义|
-|-|-|
+-:|:-
 |name|项目名称|
 |path|在./projects下的目录名称|
 |isActive|当未在启动命令加命令参数时默认启动第一个true的项目|
