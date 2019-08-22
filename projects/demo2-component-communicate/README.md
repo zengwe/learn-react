@@ -90,6 +90,69 @@ export class Child extends React.Component<IChildProps, IChildState> {
   }
 }
 ```
+## 跨组件通信
+在父*父组件定义跨组件的对象内容和跨组件对象的的类型，并且定义获取对象的方法
+```typescript
+    import PropTypes from 'prop-types';
+export interface ICrossGradeProps {
+  
+}
+export interface ICrossGradeState {
+  count: number;
+  myname: string;
+}
+export class CrossGrade extends React.Component<ICrossGradeProps, ICrossGradeState> {
+  // constructor(props: ICrossGradeProps, state: ICrossGradeState) {
+  //   super(props, state);
+  // }
+  state = {count: 1, myname: 'CrossGrade'};
+  static childContextTypes = { // 定义跨数据类型
+    count: PropTypes.number,
+    name: PropTypes.string
+  }
+  getChildContext() { // 定义获取方法
+    return {
+      count: this.state.count,
+      name: this.state.myname
+    }
+  }
+  render() {
+    return (
+      <div>
+        cross-grade works!
+        <Parent />
+      </div>
+    );
+  }
+}
+```
+获取跨组件传递的值
+```tsx
+import React from 'react';
+import './child.scss';
+import PropTypes from 'prop-types';
+export interface IChildProps {
+
+}
+export interface IChildState {
+
+}
+export class Child extends React.Component<IChildProps, IChildState> {
+//   constructor(props: IChildProps, state: IChildState) {
+//     super(props, state);
+//   }
+  static contextTypes = { // 定义获取值的数据类型
+    count: PropTypes.number,
+    name: PropTypes.string
+  }
+  render() {
+    return (
+      <div>child works! {this.context.count}{this.context.name}</div>
+    );
+  }
+}
+```
+> 跨组件从获取值的组件一直往上层组件找，找到最近的一个数据类型相同的就返回值
 ## 兄弟组件间通信
 ```bash
 npm install events --save
