@@ -10,5 +10,11 @@
 		"path": "demo1-component",
 		"isActive": false,
 		"index": "index"
+	},
+	{
+		"name": "demo2-component-communicate",
+		"path": "demo2-component-communicate",
+		"isActive": false,
+		"index": "index"
 	}
 ]
