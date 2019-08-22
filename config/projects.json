@@ -1,14 +1,14 @@
 [
 	{
-		"name": "start",
-		"path": "start",
-		"isActive": false,
+		"name": "first-try",
+		"path": "first-try",
+		"isActive": true,
 		"index": "index"
 	},
 	{
-		"name": "demo1_component",
-		"path": "demo1_component",
-		"isActive": true,
+		"name": "demo1-component",
+		"path": "demo1-component",
+		"isActive": false,
 		"index": "index"
 	}
 ]

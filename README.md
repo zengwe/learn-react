@@ -23,3 +23,6 @@
 在需要创建组件的目录下
 - npm run component component-name
 > component-name为组件命1
+
+## 学习
+### [react之组件基本用法](https://github.com/zengwe/learn-react/tree/master/projects/demo1_component "")

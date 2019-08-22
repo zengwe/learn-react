@@ -102,7 +102,6 @@ if(args.has('HELP') == true) {
 if(args.get('PROJECT_NAME') == undefined) {
     throw new Error('mybe you need to set project name!');
 }
-
 let projectInfo = {
     name: args.get('PROJECT_NAME'),
     path: args.get('PROJECT_NAME'),
@@ -129,7 +128,7 @@ if(args.get('REMOVE') == undefined) {
     }
     projects.push(projectInfo);
     fs.writeFileSync('./config/projects.json', JSON.stringify(projects,null, '\t'));
-    exists('./projects/start', './projects/'+projectInfo.name, copy);
+    exists('./template/project', './projects/'+projectInfo.name, copy);
 }else{
     for(let i = 0; i < projects.length; i++) {
         if(projects[i].name == projectInfo.name) {
