@@ -25,4 +25,4 @@
 > component-name为组件命1
 
 ## 学习
-### [react之组件基本用法](https://github.com/zengwe/learn-react/tree/master/projects/demo1_component "")
+### [react之组件基本用法](https://github.com/zengwe/learn-react/tree/master/projects/demo1-component)
