@@ -8,9 +8,9 @@ export interface IParentToChildState {
 
 }
 export class ParentToChild extends React.Component<IParentToChildProps, IParentToChildState> {
-  // constructor(props: IParentToChildProps, state: IParentToChildState) {
-  //   super(props, state);
-  // }
+  constructor(props: IParentToChildProps, state: IParentToChildState) {
+    super(props, state);
+  }
   render() {
     return (
       <div>
