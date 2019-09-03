@@ -1,4 +1,5 @@
 # react学习
+> 淘宝源 npm install --registry=https://registry.npm.taobao.org
 ## 启动项目
 ### 项目设置的目录
 文件./config/projects.json增加数组即可
@@ -27,3 +28,4 @@
 ## 学习
 - [react之组件基本用法](https://github.com/zengwe/learn-react/tree/master/projects/demo1-component)
 - [react之组件间通信](https://github.com/zengwe/learn-react/tree/master/projects/demo2-component-communicate)
+- [react之路由](https://github.com/zengwe/learn-react/tree/master/projects/demo3-base-route)
