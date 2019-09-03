@@ -2,7 +2,7 @@
 	{
 		"name": "first-try",
 		"path": "first-try",
-		"isActive": true,
+		"isActive": false,
 		"index": "index"
 	},
 	{
@@ -15,6 +15,12 @@
 		"name": "demo2-component-communicate",
 		"path": "demo2-component-communicate",
 		"isActive": false,
+		"index": "index"
+	},
+	{
+		"name": "demo3-base-route",
+		"path": "demo3-base-route",
+		"isActive": true,
 		"index": "index"
 	}
 ]
