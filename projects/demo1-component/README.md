@@ -1,4 +1,5 @@
 # react之组件基本用法
+代码：[github-learn-react](https://github.com/zengwe/learn-react)
 ## 普通组件
 ### 代码
 ```jsx
