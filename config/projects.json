@@ -20,6 +20,12 @@
 	{
 		"name": "demo3-base-route",
 		"path": "demo3-base-route",
+		"isActive": false,
+		"index": "index"
+	},
+	{
+		"name": "demo4-uncontroll",
+		"path": "demo4-uncontroll",
 		"isActive": true,
 		"index": "index"
 	}
