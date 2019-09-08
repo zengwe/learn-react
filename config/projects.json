@@ -26,6 +26,12 @@
 	{
 		"name": "demo4-uncontroll",
 		"path": "demo4-uncontroll",
+		"isActive": false,
+		"index": "index"
+	},
+	{
+		"name": "demo5-redux-test",
+		"path": "demo5-redux-test",
 		"isActive": true,
 		"index": "index"
 	}
