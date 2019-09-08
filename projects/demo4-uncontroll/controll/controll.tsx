@@ -1,9 +1,6 @@
 import React from 'react';
 import './controll.scss';
-
-export interface IControllProps {
-
-}
+export interface IControllProps {}
 export interface IControllState {
   username: string;
   password: string;
