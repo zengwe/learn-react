@@ -32,7 +32,8 @@ const rootReducers = combineReducers({
 const store = createStore(
   rootReducers,
   compose(
-    applyMiddleware(...[thunk])
+    applyMiddleware(...[thunk]),
+    (window as any).__REDUX_DEVTOOLS_EXTENSION__ && (window as any).__REDUX_DEVTOOLS_EXTENSION__(),
   )
 );
 console.log(store);
