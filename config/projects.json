@@ -32,6 +32,12 @@
 	{
 		"name": "demo5-redux-test",
 		"path": "demo5-redux-test",
+		"isActive": false,
+		"index": "index"
+	},
+	{
+		"name": "demo6-react-redux",
+		"path": "demo6-react-redux",
 		"isActive": true,
 		"index": "index"
 	}
