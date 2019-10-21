@@ -15,7 +15,7 @@ class App extends React.Component {
             </p>
           </header>
           <div>post list</div>
-          <div><PostListComponents></PostListComponents></div>
+          <div><PostListComponents name="zengwe"></PostListComponents></div>
         </div>        
     );    
   }

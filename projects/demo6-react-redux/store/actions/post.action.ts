@@ -7,3 +7,9 @@ export const loadPostsAction = (dispatch: any) => {
         });
     });
 }
+export const clearPostList = (dispatch: any) => {
+    dispatch({
+        type: 'CLEAR_POSTS',
+        payload: []
+    })
+}

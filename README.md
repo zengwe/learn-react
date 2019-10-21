@@ -30,4 +30,4 @@
 - [react之组件间通信](https://github.com/zengwe/learn-react/tree/master/projects/demo2-component-communicate)
 - [react之路由](https://github.com/zengwe/learn-react/tree/master/projects/demo3-base-route)
 - [react之受控组件和非受控组件](https://github.com/zengwe/learn-react/tree/master/projects/demo4-uncontroll)
-- [react之redux使用](https://github.com/zengwe/learn-react/tree/master/projects/demo5-redux-test)
+- [react之redux试用](https://github.com/zengwe/learn-react/tree/master/projects/demo5-redux-test)

@@ -1,4 +1,5 @@
 # redux 初步学习
+代码：[github-learn-react](https://github.com/zengwe/learn-react)
 ## 创建reduce
 ```jsx
 const counterReducer = function(state: any = {count: 1}, action: any) {
