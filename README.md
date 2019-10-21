@@ -31,3 +31,4 @@
 - [react之路由](https://github.com/zengwe/learn-react/tree/master/projects/demo3-base-route)
 - [react之受控组件和非受控组件](https://github.com/zengwe/learn-react/tree/master/projects/demo4-uncontroll)
 - [react之redux试用](https://github.com/zengwe/learn-react/tree/master/projects/demo5-redux-test)
+- [react之react-redux](https://github.com/zengwe/learn-react/tree/master/projects/demo6-react-redux)
