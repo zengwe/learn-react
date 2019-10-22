@@ -38,6 +38,12 @@
 	{
 		"name": "demo6-react-redux",
 		"path": "demo6-react-redux",
+		"isActive": false,
+		"index": "index"
+	},
+	{
+		"name": "demo7-react-lazy-reducer",
+		"path": "demo7-react-lazy-reducer",
 		"isActive": true,
 		"index": "index"
 	}

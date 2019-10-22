@@ -1,22 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { loadPostsAction } from '../store/actions/post.action';
+import { loadPostsAction, clearPostList } from '../store/actions/post.action';
 class PostListComponentsd extends React.Component<any, any> {
-    constructor(props: any) {
-        super(props);
-    }
     componentDidMount() {
-        this.props.dispatch(loadPostsAction)
+        this.props.load()
     }
     render() {
-        console.log(this.props);
         const { list } = this.props.post;
-        console.log(list);
         let post = list.map((item: any) => {
             return (<li key={item.id}>{item.title}</li>)
         });
         return (
             <div>
+                <div>
+                    <button onClick={this.props.clear}>清除</button>
+                    <button onClick={this.props.load}>加载</button>
+                </div>
                 <ul>
                     {post}
                 </ul>
@@ -25,13 +24,19 @@ class PostListComponentsd extends React.Component<any, any> {
     }
 };
 const mapStateToProps = (state: any, ownProps: any) => {
+    console.log(state)
     return {
         post: state.post
     }
 };
 const mapDispatchToProps = (dispatch: any, ownProps: any) => {
+    console.log(ownProps)
     return {
-
+        clear: () => dispatch(clearPostList),
+        load: () => dispatch(loadPostsAction)
     }
 }
-export const PostListComponents = connect(mapStateToProps)(PostListComponentsd);
+const mergeProps = (...param: any) => {
+    return Object.assign({}, ...param);
+}
+export const PostListComponents = connect(mapStateToProps, mapDispatchToProps, mergeProps)(PostListComponentsd);
