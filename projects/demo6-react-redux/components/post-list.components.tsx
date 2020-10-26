@@ -7,6 +7,7 @@ class PostListComponentsd extends React.Component<any, any> {
     }
     render() {
         const { list } = this.props.post;
+        console.log('this.props',this.props)
         let post = list.map((item: any) => {
             return (<li key={item.id}>{item.title}</li>)
         });
@@ -24,7 +25,7 @@ class PostListComponentsd extends React.Component<any, any> {
     }
 };
 const mapStateToProps = (state: any, ownProps: any) => {
-    console.log(state)
+    console.log(state, ownProps)
     return {
         post: state.post
     }

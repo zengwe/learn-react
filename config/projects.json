@@ -44,6 +44,12 @@
 	{
 		"name": "demo7-react-lazy-reducer",
 		"path": "demo7-react-lazy-reducer",
+		"isActive": false,
+		"index": "index"
+	},
+	{
+		"name": "rh-demo",
+		"path": "rh-demo",
 		"isActive": true,
 		"index": "index"
 	}
