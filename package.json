@@ -152,7 +152,7 @@
     "@types/react-router-dom": "^4.3.5",
     "@types/redux-thunk": "^2.1.0",
     "ejs": "^2.6.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.2.0"
   }
 }
